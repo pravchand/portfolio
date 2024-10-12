@@ -99,7 +99,7 @@
         <section class="project">
             <h3>Project Title 2</h3>
             <p>Description of your project goes here. You can include technologies used, challenges faced, and what you learned.</p>
-            <a href="#" target="_blank">View Project</a>
+            <a href="https://github.com/pravchand/energy_project" target="_blank">View Project</a>
         </section>
         <section class="project">
             <h3>Project Title 3</h3>
