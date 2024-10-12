@@ -2,6 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -53,11 +54,31 @@
             padding: 15px;
             margin: 10px 0;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
         }
 
         .project h3 {
             margin-top: 0;
             font-size: 1.5em;
+        }
+
+        .project p {
+            margin-bottom: 10px;
+            font-size: 1em;
+        }
+
+        .project a {
+            text-align: center;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .project a:hover {
+            background-color: #45a049;
         }
 
         .footer {
@@ -93,6 +114,15 @@
                 font-size: 1.3em; /* Smaller headings on small screens */
             }
 
+            .project p {
+                font-size: 0.9em; /* Smaller description text */
+            }
+
+            .project a {
+                font-size: 0.9em; /* Adjust button size */
+                padding: 8px;
+            }
+
             .footer {
                 font-size: 0.9em; /* Adjust footer text size */
             }
@@ -101,13 +131,13 @@
 </head>
 <body>
     <header class="header">
-        <h1>Praveen C Devarajan</h1>
+        <h1>My Portfolio</h1>
         <p>Welcome to my portfolio! Here are some of my projects.</p>
     </header>
     <nav class="nav">
         <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">Resume</a></li>
+            <li><a href="#">About</a></li>
             <li><a href="#">Projects</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
@@ -121,14 +151,13 @@
         <section class="project">
             <h3>Project Title 2</h3>
             <p>Description of your project goes here. You can include technologies used, challenges faced, and what you learned.</p>
-            <a href="https://github.com/pravchand/energy_project" target="_blank">View Project</a>
+            <a href="#" target="_blank">View Project</a>
         </section>
         <section class="project">
             <h3>Project Title 3</h3>
             <p>Description of your project goes here. You can include technologies used, challenges faced, and what you learned.</p>
             <a href="#" target="_blank">View Project</a>
         </section>
-        <!-- Add more projects as needed -->
     </div>
     <footer class="footer">
         <p>&copy; 2024 My Portfolio</p>
