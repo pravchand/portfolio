@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        body {
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -102,38 +102,13 @@
 
 /* Mobile Styles */
 @media (max-width: 600px) {
-    body {
-        font-size: 14px; /* Reduce base font size for mobile */
-    }
-
     .container {
         flex-direction: column;
-        padding: 0 10px; /* Add minimal padding to container */
     }
 
     .project {
         width: 100%;
         margin: 10px 0;
-        padding: 10px;
-        border-radius: 4px; /* Smaller border-radius */
-        max-width: 100%; /* Ensure project doesn't exceed screen width */
-    }
-
-    .project h3 {
-        font-size: 1.2em; /* Smaller heading for mobile */
-        margin-bottom: 0.5em;
-    }
-
-    .project p {
-        font-size: 0.9em; /* Smaller paragraph text */
-        line-height: 1.4; /* Adjust line height for readability */
-        margin-bottom: 0.8em;
-    }
-
-    .project a {
-        font-size: 0.9em;
-        padding: 8px;
-        margin-top: 5px;
     }
 
     .nav ul {
@@ -143,25 +118,23 @@
 
     .nav li {
         margin: 5px 0;
-        width: 100%;
-        text-align: center;
     }
 
-    .nav a {
-        padding: 8px 0;
+    .project h3 {
+        font-size: 1.3em;
     }
 
-    .header {
-        padding: 1em 0;
+    .project p {
+        font-size: 0.9em;
     }
 
-    .header h1 {
-        font-size: 1.5em;
+    .project a {
+        font-size: 0.9em;
+        padding: 8px;
     }
 
     .footer {
-        font-size: 0.8em;
-        padding: 0.8em 0;
+        font-size: 0.9em;
     }
 }
     </style>
