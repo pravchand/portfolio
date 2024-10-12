@@ -41,10 +41,10 @@
 
         .container {
             display: flex;
-            flex-direction: column;
-            margin: 20px;
+            flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+            justify-content: space-around; /* Space out items */
             max-width: 1200px;
-            margin: 0 auto;
+            margin: 20px auto;
             padding: 0 15px;
         }
 
@@ -52,10 +52,10 @@
             background-color: white;
             border-radius: 8px;
             padding: 15px;
-            margin: 10px 0;
+            margin: 10px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            display: flex;
-            flex-direction: column;
+            width: 30%; /* Set width for each project */
+            box-sizing: border-box; /* Include padding in width calculation */
         }
 
         .project h3 {
@@ -69,12 +69,14 @@
         }
 
         .project a {
+            display: block;
             text-align: center;
             background-color: #4CAF50;
             color: white;
             padding: 10px;
             border-radius: 5px;
             text-decoration: none;
+            margin-top: 10px;
         }
 
         .project a:hover {
@@ -92,22 +94,13 @@
 
         /* Mobile Styles */
         @media (max-width: 600px) {
-            .nav ul {
-                flex-direction: column; /* Stack nav items vertically on small screens */
-            }
-
-            .nav li {
-                margin: 10px 0;
-            }
-
             .container {
-                margin: 0 5px; /* Reduce margin on smaller screens */
-                padding: 0 10px; /* Add padding to ensure content doesn't touch the screen edge */
+                flex-direction: column; /* Stack projects vertically on mobile */
             }
 
             .project {
-                padding: 10px;
-                margin: 15px 0;
+                width: 100%; /* Full width on small screens */
+                margin: 10px 0; /* Adjust margins for small screens */
             }
 
             .project h3 {
