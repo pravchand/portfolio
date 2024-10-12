@@ -29,7 +29,7 @@
         }
 
         .nav li {
-            margin: 0 15px;
+            margin: 0 10px;
         }
 
         .nav a {
@@ -44,18 +44,20 @@
             margin: 20px;
             max-width: 1200px;
             margin: 0 auto;
+            padding: 0 15px;
         }
 
         .project {
             background-color: white;
             border-radius: 8px;
-            padding: 20px;
+            padding: 15px;
             margin: 10px 0;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
         .project h3 {
             margin-top: 0;
+            font-size: 1.5em;
         }
 
         .footer {
@@ -67,12 +69,32 @@
             clear: both;
         }
 
+        /* Mobile Styles */
         @media (max-width: 600px) {
             .nav ul {
-                flex-direction: column; /* Stack nav items on smaller screens */
+                flex-direction: column; /* Stack nav items vertically on small screens */
             }
+
+            .nav li {
+                margin: 10px 0;
+            }
+
             .container {
-                padding: 0 10px; /* Add padding for smaller screens */
+                margin: 0 5px; /* Reduce margin on smaller screens */
+                padding: 0 10px; /* Add padding to ensure content doesn't touch the screen edge */
+            }
+
+            .project {
+                padding: 10px;
+                margin: 15px 0;
+            }
+
+            .project h3 {
+                font-size: 1.3em; /* Smaller headings on small screens */
+            }
+
+            .footer {
+                font-size: 0.9em; /* Adjust footer text size */
             }
         }
     </style>
